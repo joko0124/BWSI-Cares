@@ -1,0 +1,898 @@
+﻿Build1=Default,com.bwsi.cares
+File1=1.jpg
+File10=bwc.png
+File11=bwsi care.png
+File12=bwsi.png
+File13=callus.png
+File14=DataPrivacy.bal
+File15=DBase.db
+File16=edit.png
+File17=FAQs.bal
+File18=FAQsContent.bal
+File19=header.jpg
+File2=2.jpg
+File20=Helvetica.ttf
+File21=History.bal
+File22=home.png
+File23=house-flood.png
+File24=landingcontents.bal
+File25=landingpage.bal
+File26=light.ttf
+File27=Login.bal
+File28=NewDetails.bal
+File29=News1.jpg
+File3=3.jpg
+File30=News2.jpg
+File31=News4.png
+File32=News6.jpg
+File33=NewsCards.bal
+File34=person0.jpg
+File35=person1.jpg
+File36=person2.jpg
+File37=person3.jpg
+File38=services.jpg
+File39=services.png
+File4=4.jpg
+File40=services-desc.jpg
+File41=ServicesDetails.bal
+File42=ServicesItems.bal
+File43=Splash.bal
+File44=splash.jpg
+File45=splash.png
+File46=table-like.png
+File47=ultralight.ttf
+File48=user.png
+File49=web1.jpg
+File5=65.jpg
+File50=web2.jpg
+File51=web3.jpg
+File52=web4.jpg
+File6=65years.jpg
+File7=arrow.png
+File8=arrow2.png
+File9=bold.ttf
+FileGroup1=Default Group\Images
+FileGroup10=Default Group\Icons
+FileGroup11=Default Group\Images
+FileGroup12=Default Group
+FileGroup13=Default Group\Icons
+FileGroup14=Default Group\Activity Layouts
+FileGroup15=Default Group
+FileGroup16=Default Group\Icons
+FileGroup17=Default Group\Activity Layouts
+FileGroup18=Default Group
+FileGroup19=Default Group\Images
+FileGroup2=Default Group\Images
+FileGroup20=Default Group\Fonts
+FileGroup21=Default Group\Activity Layouts
+FileGroup22=Default Group\Icons
+FileGroup23=Default Group\Icons
+FileGroup24=Default Group\Activity Layouts
+FileGroup25=Default Group\Activity Layouts
+FileGroup26=Default Group\Fonts
+FileGroup27=Default Group\Activity Layouts
+FileGroup28=Default Group\Activity Layouts
+FileGroup29=Default Group\Images
+FileGroup3=Default Group\Images
+FileGroup30=Default Group\Images
+FileGroup31=Default Group\Images
+FileGroup32=Default Group\Images
+FileGroup33=Default Group\Activity Layouts
+FileGroup34=Default Group\Dummy Persons
+FileGroup35=Default Group\Dummy Persons
+FileGroup36=Default Group\Dummy Persons
+FileGroup37=Default Group\Dummy Persons
+FileGroup38=Default Group\Images
+FileGroup39=Default Group\Icons
+FileGroup4=Default Group\Images
+FileGroup40=Default Group\Images
+FileGroup41=Default Group\Activity Layouts
+FileGroup42=Default Group\Activity Layouts
+FileGroup43=Default Group\Activity Layouts
+FileGroup44=Default Group\Images
+FileGroup45=Default Group\Images
+FileGroup46=Default Group
+FileGroup47=Default Group\Fonts
+FileGroup48=Default Group\Icons
+FileGroup49=Default Group\Images
+FileGroup5=Default Group\Images
+FileGroup50=Default Group\Images
+FileGroup51=Default Group\Images
+FileGroup52=Default Group\Images
+FileGroup6=Default Group\Images
+FileGroup7=Default Group\Images
+FileGroup8=Default Group\Images
+FileGroup9=Default Group\Fonts
+Group=Default Group
+Library1=appcompat
+Library10=xcustomlistview
+Library11=xmllayoutbuilder
+Library12=xui
+Library13=xui views
+Library14=assegmentedtab
+Library2=bctextengine
+Library3=core
+Library4=floatingactionbutton
+Library5=phone
+Library6=reflection
+Library7=runtimepermissions
+Library8=splashfade
+Library9=sql
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.
+Module1=BBListItem
+Module10=Starter
+Module2=CLVExpandable
+Module3=DataPrivacyPage
+Module4=DBUtils
+Module5=FAQsPage
+Module6=GlobalVariables
+Module7=HistoryPage
+Module8=ImageSlider
+Module9=NewsPage
+NumberOfFiles=52
+NumberOfLibraries=14
+NumberOfModules=10
+Version=12.2
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: BWSI Cares
+	#VersionCode: 1
+	#VersionName: 1.0.0
+	#SupportedOrientations: Portrait
+	#CanInstallToExternalStorage: False
+'	#AdditionalRes: C:\B4A\FABScrollViewExample\FABScrollView\resource
+#End Region
+	#AdditionalRes: C:\BWSI Cares\Resource
+#Region  Activity Attributes 
+	#FullScreen: FALSE
+	#IncludeTitle: FALSE
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private timer1 As Timer
+	Dim tmrSplash As Timer
+	Type MyNews(Thumbnails As Bitmap , Title As String, NewsInfo As String, Author As String, DatePublished As String)
+	Public SelectedNews As MyNews
+
+
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	Private imgSlider As ImageSlider
+	Private scvMain As ScrollView
+	
+	Private xui As XUI
+	Private mXUI As XUI
+	Private pnlMain As Panel
+	
+	Private PanelSelection As Panel
+	Private btnAccount As ImageView
+	Private btnBranches As ImageView
+	Private btnCallUs As ImageView
+	Private btnHome As ImageView
+	Private btnServices As ImageView
+	
+	Private pnlSplash As Panel
+	Private bitmp(4) As Bitmap
+	Private strNewsTitle(4), strNewsDesc(4), strAuthor(4), strDate(4) As String
+
+	Private imgNews As B4XImageView
+	Private lblNewsTitle As Label
+	Private lblAuthor As Label
+	Private clvNews As CustomListView
+	Private lblDate As Label
+	Private imgAbout As B4XImageView
+	Private pnlAccount As Panel
+	Private pnlServices As Panel
+	
+	
+	Private lblCheck As Label
+	Private lblEmail As Label
+	Private lblForgotPassword As Label
+	Private lblLogin As Label
+	Private lblPassword As Label
+	Private pnlLogin As Panel
+	Private txtLoginEMail As EditText
+	Private txtLoginPassword As EditText
+	
+	'Services Objects
+'	Private Back As Label
+'	Private ServicesView As BBCodeView
+	Private TextEngine As BCTextEngine
+'	Private ImageView1 As B4XImageView
+'	Private picbmp As Bitmap
+	Private BBListItemIndexInItems As Int = 0
+	Private Expandable As CLVExpandable
+	Private FadeBitmap As B4XBitmap
+	Private bc As BitmapCreator
+
+
+	Private btnServicesBack As Label
+
+	Private fabApply As FloatingActionButton
+	Private clvServices As CustomListView
+
+	Private lblServices As Label
+	Private lblDot As Label
+'	Private Arrow As ImageView
+'	Private pnlServiceTitle As Panel
+	Private lblViewAll As Label
+	
+	'Login
+	Private cdTxtBox As ColorDrawable
+End Sub
+
+#Region Activity Events
+Sub Activity_Create(FirstTime As Boolean)
+'	GlobalVariables.SetSmallDisplay
+	CheckPermissions
+	Activity.LoadLayout("landingpage")
+	If FirstTime Then
+		SetStatusBarAndNavigationColor(0x7CD4D4D4)
+		ShowSplash
+	End If
+	tmrSplash.Initialize("DoSomething",300)
+	tmrSplash.Enabled = True
+	scvMain.Visible = True
+	scvMain.Panel.LoadLayout("LandingContents")
+	scvMain.Panel.Height = pnlMain.Height
+	PanelSelection.Initialize("PanelSelection")
+	pnlAccount.Visible = False
+
+'	Wait For (CheckConnected) Complete (Connected As Boolean)
+'	LogColor($"Is connected: "$ & Connected,Colors.Yellow)
+'	If Connected Then
+'	End If
+	imgSlider.NumberOfImages = 4
+	imgSlider.PrevImage
+	timer1.Initialize("Timer1",3000)
+	timer1.Enabled = True
+	
+	SetStatusBarAndNavigationColor(GlobalVariables.PriColor1)
+	
+	Panel_Selection_Attr(btnHome)
+
+	InitializeDatas
+	
+	CreateItem
+	
+	'Load a Drawable for the icon
+'	Dim xml As XmlLayoutBuilder
+'	fabApply.Initialize("fabApply")
+	fabApply.IconDrawable = "fab_add"
+	fabApply.ColorNormal = GlobalVariables.PriColor2
+	fabApply.ColorPressed = GlobalVariables.PriColor3
+	fabApply.ColorRipple = GlobalVariables.PriColor1
+	fabApply.ButtonSize = 1
+'	fabApply.Width = 20dip
+'	fabApply.Height = 20dip
+'	fabApply.Progress = 0
+	fabApply.Indeterminate = True
+	
+	
+
+	'Set the offset of hide position. This is the amount the FAB moves on hide.
+'	fabApply.HideOffset = 100%y - fabApply.Top
+'	fabApply.Hide(False)
+
+	TextEngine.Initialize(Activity)
+	Expandable.Initialize(clvServices)
+	bc.Initialize(Activity.Width, 40dip)
+	bc.FillGradient(Array As Int(0x00FFFFFF, GlobalVariables.PriColor3), bc.TargetRect, "TOP_BOTTOM")
+	FadeBitmap = bc.Bitmap
+
+End Sub
+
+Sub Activity_Resume
+	'	tmrSplash.Enabled = False
+	'	pnlSplash.Visible = False
+	scvMain.Visible = True
+	btnHome_Click
+	timer1.Enabled = True
+	scvMain.ScrollPosition = 0
+	pnlAccount.Visible = False
+	pnlServices.Visible = False
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+	If Permission = GlobalVariables.RTP.PERMISSION_CAMERA Then
+		Result = True
+		LogColor("YOU CAN USE THE CAMERA",Colors.Red)
+	Else
+		Result = False
+	End If
+	Log (Permission)
+End Sub
+#End Region
+
+#Region Splash
+Private Sub DoSomething_Tick
+	Log("WORKING...")
+End Sub
+Private Sub ShowSplash
+	pnlSplash.Visible = True
+	Sleep(3000)
+	pnlSplash.Visible = False
+	tmrSplash.Enabled = False
+End Sub
+Private Sub pnlSplash_Touch (Action As Int, X As Float, Y As Float)
+	
+End Sub
+#End Region
+
+#Region Initial Check
+Private Sub CheckPermissions
+	Log("Checking Permissions")
+  
+	GlobalVariables.RTP.CheckAndRequest(GlobalVariables.RTP.PERMISSION_READ_EXTERNAL_STORAGE)
+	GlobalVariables.RTP.CheckAndRequest(GlobalVariables.RTP.PERMISSION_WRITE_EXTERNAL_STORAGE)
+	GlobalVariables.RTP.CheckAndRequest(GlobalVariables.RTP.PERMISSION_ACCESS_COARSE_LOCATION)
+	GlobalVariables.RTP.GetAllSafeDirsExternal("")
+  
+	GlobalVariables.RTP.CheckAndRequest(GlobalVariables.RTP.PERMISSION_CAMERA)
+	GlobalVariables.RTP.CheckAndRequest(GlobalVariables.RTP.PERMISSION_BODY_SENSORS)
+	Return
+  
+End Sub
+
+Sub CheckConnected As ResumableSub
+	'Requires Phone Library
+	Dim p As Phone
+	'Ping Google DNS
+	Wait For (p.ShellAsync("ping", Array As String("-c", "1", "8.8.8.8"))) Complete (Success As Boolean, ExitValue As Int, StdOut As String, StdErr As String)
+	If StdErr = "" And StdOut.Contains("Destination Host Unreachable") = False Then
+		Return True
+	Else
+		Return False
+	End If
+End Sub
+#End Region
+
+#Region Banner
+Sub imgSlider_GetImage (Index As Int) As ResumableSub
+	Return mXUI.LoadBitmapResize(File.DirAssets,$"web${Index + 1}.jpg"$,imgSlider.WindowBase.Width, imgSlider.WindowBase.Height,True)
+End Sub
+Private Sub Timer1_Tick
+	imgSlider.NextImage
+End Sub
+
+#End Region
+
+#Region Main Body
+Sub scvMain_ScrollChanged(Position As Int)
+	
+End Sub
+
+'About Us
+Private Sub pnlAboutUs_Click
+	timer1.Enabled = False
+	StartActivity(HistoryPage)
+End Sub
+
+#End Region
+
+#Region News Info
+''CLV Item Create
+Sub CreateItem()
+	For i = 0 To 3
+		Dim p As B4XView = xui.CreatePanel("")
+		Dim height As Int = 100%y
+		p.SetLayoutAnimated(0, 0, 0, 100%x , height)
+		p.LoadLayout("NewsCards")
+		Dim Info As MyNews
+'		imgNews.CornersRadius = 30dip
+		imgNews.Bitmap = bitmp(i)
+		lblNewsTitle.Text = strNewsTitle(i)
+		lblAuthor.TextColor = GlobalVariables.PriColor2
+		lblDate.TextColor = GlobalVariables.PriColor2
+		lblAuthor.Text = strAuthor(i)
+		lblDate.Text = strDate(i)
+		
+		Info.Thumbnails = bitmp(i)
+		Info.Title = strNewsTitle(i)
+		Info.Author= strAuthor(i)
+		Info.DatePublished = strDate(i)
+		Info.NewsInfo = strNewsDesc(i)
+		clvNews.Add(p,Array(i,Info))
+	Next
+End Sub
+
+Private Sub clvNews_ItemClick (Index As Int, Value As Object)
+	Dim v() As Object = Value
+	Dim Index As Int = v(0)
+	SelectedNews = v(1)
+	StartActivity(NewsPage)
+End Sub
+
+Sub InitializeDatas
+	bitmp(0) = LoadBitmap(File.DirAssets,"News1.jpg")
+	bitmp(1) = LoadBitmap(File.DirAssets,"News2.jpg")
+	bitmp(2) = LoadBitmap(File.DirAssets,"News6.jpg")
+	bitmp(3) = LoadBitmap(File.DirAssets,"News4.png")
+
+	strNewsTitle(0) = "Happy 65th anniversary, BWSI"
+	strAuthor(0) = Chr(0xF044) & " Balibago Waterworks"
+	strDate(0) = Chr(0xF073) & " 2023-05-21"
+	strNewsDesc(0) = _
+$"[Alignment=justify][TextSize=15]From humble beginnings To a beacon of progress, we have been making waves in providing clean, healthy, And potable water services To almost two million people now. Let us honor our legacy And embrace the winds of change, ensuring a brighter, greener, And sustainable future For generations To come.
+[b]Happy 65th Anniversary, BWSI![/b][/TextSize][/Alignment]"$
+	
+	strNewsTitle(1) = "World Water Day 2023!"
+	strAuthor(1) = Chr(0xF044) & " Balibago Waterworks"
+	strDate(1) = Chr(0xF073) & " 2023-01-12"
+	strNewsDesc(1) = _
+$"[Alignment=justify][TextSize=15]Balibago Waterworks joins [b]United Nations' Water Campaign[/b] in celebration of [b]World Water Day[/b]. The campaign focuses on the targets of [b]Sustainable Development Goal #6[/b] which tackles water and sanitation issues.
+This year's theme encourages everyone to "be the change we want to see in the world". It serves as a simple reminder that even seemingly insignificant actions can add up to significant progress if we all take part in them. 
+[b]Do we stand and stare?[/b]
+
+or,
+
+[b]Do we act?[/b][/TextSize][/Alignment]"$
+
+	strNewsTitle(2) = "BW BOD appoints Sir CLP as the new Chairman"
+	strAuthor(2) = Chr(0xF044) & " Balibago Waterworks"
+	strDate(2) = Chr(0xF073) & " 2022-12-10"
+	strNewsDesc(2) = _
+$"[Alignment=justify][TextSize=15]It is with great excitement that we announce the appointment of [b]MR. CRISTINO L. PANLILIO[/b] as the [b]new CHAIRMAN of Balibago Waterworks Board of Directors[/b] during the August 2022 Board Meeting.
+Consequently, [b]MR. MICHAEL L. ESCALER[/b] is now our [b]CHAIRMAN EMERITUS[/b]
+Many thanks to Sir MLE for being the captain of our ship for all these years! And best wishes to Sir CLP as he takes the charge now. 
+We are excited about the future and look forward to bringing Balibago Waterworks to the next level with this change in the chairmanship.
+[/TextSize][/Alignment]"$
+
+	strNewsTitle(3) = "BWSI Inks MOA With ARAW-ACI, KAAPKA On Angeles Watershed Rehabilitation"
+	strAuthor(3) = Chr(0xF044) & " Balibago Waterworks"
+	strDate(3) = Chr(0xF073) & " 2022-10-13"
+	strNewsDesc(3) = _
+$"[Alignment=justify][TextSize=15]Balibago Waterworks, as a faithful partner of the City Government of Angeles in delivering clean, healthy, and potable water to its residents for 64 years now, recognizes its critical role in taking care of the environment. 
+
+As a manifestation of this commitment, Balibago Waterworks has inked a partnership deal with [b]Abacan River and Angeles Watershed Advocacy Council, Inc. (ARAW-ACI)[/b] and [b]Kapatirang Aetas ng Angeles-Porac para sa Kalikasan at Agrikultura (KAAPKA)[/b] on the rehabilitation of [b]Angeles City Watershed today (October 11, 2022) at Oasis Hotel.[/b]  
+
+Under the [b]“Adopt-A-Watershed”[/b] Program of ARAW-ACI, Balibago Waterworks will be planting and maintaining at least 10,000 trees on ten (10) hectares of the Angeles City Watershed within the next five (5) years with the planting of the first 1,000 seedlings happening on October 22, 2022 at Sitio Balaru, Sapangbato, Angeles City.
+
+The following representatives are the signatories of the MOA: [b]Mr. Renato S. Tayag Jr. (ARAW-ACI President), Ms. Cristina Isabelle P. Alejandro (BWSI President), and Mr. Arnel Sibal (Representative of KAAPKA President, Mr. Henry A. Pan)[/b]. 
+
+This historic agreement was witnessed by the [b]City Environment and Natural Resources Office Officer-in-Charge, Mr. Archimedes M. Lazatin, Angeles City Vice Mayor Hon. Vicky Vega-Cabigting[/b], and [b]Angeles City Mayor Hon. Carmelo “Pogi” Lazatin, Jr..[/b]
+[/TextSize][/Alignment]"$
+End Sub
+#End Region
+
+#Region Button Menu
+Private Sub fabApply_Click
+	StartActivity(DataPrivacyPage)
+End Sub
+Private Sub btnHome_Click
+	pnlAccount.Visible = False
+	pnlServices.Visible = False
+	PanelSelection.RemoveView
+	Panel_Selection_Attr(btnHome)
+	scvMain.Visible = True
+	fabApply.Visible = True
+End Sub
+
+Private Sub btnServices_Click
+'	timer1.Enabled = False
+'	StartActivity(ServicesPage)
+	pnlAccount.Visible = False
+	pnlServices.Visible = True
+	InitServices
+	PanelSelection.RemoveView
+	Panel_Selection_Attr(btnServices)
+	scvMain.Visible = False
+End Sub
+
+
+Private Sub btnBranches_Click
+	PanelSelection.RemoveView
+	Panel_Selection_Attr(btnBranches)
+End Sub
+
+Private Sub btnCallUs_Click
+	PanelSelection.RemoveView
+	Panel_Selection_Attr(btnCallUs)
+End Sub
+
+Private Sub btnAccount_Click
+	PanelSelection.RemoveView
+	Panel_Selection_Attr(btnAccount)
+	scvMain.Visible = False
+	pnlServices.Visible = False
+	pnlAccount.Visible = True
+	pnlAccount.SetLayoutAnimated(0,0,0,100%x, 90%y)
+	pnlAccount.LoadLayout("Login")
+	cdTxtBox.Initialize2(Colors.Transparent, 0,0, Colors.Transparent)
+	txtLoginEMail.Background = cdTxtBox
+	txtLoginPassword.Background = cdTxtBox
+	fabApply.Visible = False
+End Sub
+
+#End Region
+#Region Services Details
+Private Sub CreateItemText(index As Int) As String
+	Dim sb As StringBuilder
+	sb.Initialize
+	sb.Append($"[alignment=center][b]Item #${index}[/b][/alignment]"$)
+	For i = 1 To Rnd(1, 20)
+		sb.Append(CRLF).Append($"[u]Line ${i}[/u]: [color=red]alksd[/color] [url="https://www.b4x.com"]jalksd jklasd[/url] kalsd "$)
+	Next
+	Return sb.ToString
+End Sub
+
+Private Sub BBListItem1_LinkClicked (URL As String)
+	Log(URL)
+	Dim bb As BBListItem = Sender
+	Dim index As Int = clvServices.GetItemFromView(bb.mBase)
+	Log(index)
+End Sub
+
+Private Sub clvServices_ScrollChanged (Offset As Int)
+	For i = 0 To clvServices.Size - 1
+		Dim pnl As B4XView = clvServices.GetPanel(i)
+		If pnl.NumberOfViews = 0 Then Return
+		Dim BB As BBListItem = pnl.GetView(1).GetView(BBListItemIndexInItems).Tag
+		BB.ParentScrolled(Offset, clvServices.GetRawListItem(i).Offset, clvServices.AsView.Height, pnl.GetView(0).Height)
+	Next
+End Sub
+
+#if B4i or B4A
+Private Sub pnlServiceTitle_Click
+#Else If B4J
+Private Sub pnlTitle_MouseClicked (EventData As MouseEvent)
+#End If
+	Dim index As Int = clvServices.GetItemFromView(Sender)
+	Dim Fade As B4XView = clvServices.GetPanel(index).GetView(1).GetView(1)
+	Dim e As ExpandableItemData = Expandable.ToggleItem(index)
+	If e.ExpandedHeight <> e.CollapsedHeight Then
+		Fade.SetVisibleAnimated(100dip, Not(e.Expanded))
+	End If
+	clvServices_ScrollChanged(clvServices.sv.ScrollViewOffsetY)
+End Sub
+
+
+Private Sub clvServices_VisibleRangeChanged (FirstIndex As Int, LastIndex As Int)
+	
+End Sub
+
+Private Sub InitServices
+	Dim SenderFilter As Object
+	clvServices.Clear
+	Try
+		Starter.strCriteria = "SELECT * FROM tblServices " & _
+						  "ORDER BY id ASC"
+							  
+		SenderFilter = Starter.DBCon.ExecQueryAsync("SQL", Starter.strCriteria, Null)
+		Wait For (SenderFilter) SQL_QueryComplete (Success As Boolean, RS As ResultSet)
+		
+		If Success Then
+			Dim StartTime As Long = DateTime.Now
+			Do While RS.NextRow
+				Dim Pnl As B4XView = xui.CreatePanel("")
+				Pnl.SetLayoutAnimated(0, 0, 0, clvServices.AsView.Width, 100%y)
+				Pnl.LoadLayout("ServicesItems")
+				Dim TitlePnl As B4XView = Pnl.GetView(0)
+'		TitlePnl.Height = 30dip
+				'LogColor(TitlePnl.Height, Colors.Yellow)
+				lblServices.Text = RS.GetString("ServiceTitle")
+				Dim BB As BBListItem = Pnl.GetView(1).GetView(BBListItemIndexInItems).Tag
+				BB.TextEngine = TextEngine
+'		BB.Text = CreateItemText(i)	'KC
+				BB.Text = GetContent(RS.GetInt("id"))	'KC
+				Dim ex As ExpandableItemData = Expandable.CreateValue(Pnl, "not used")
+				ex.CollapsedHeight = 100dip
+				ex.ExpandedHeight = Max(ex.CollapsedHeight, BB.mBase.Height + 20dip + TitlePnl.Height)
+				Dim fade As B4XView = Pnl.GetView(1).GetView(1)
+				Dim Arrow As B4XView = Pnl.GetView(0).GetView(2)
+				
+'				Log(Pnl.GetView(0).GetView(2).Tag)
+				If ex.ExpandedHeight > ex.CollapsedHeight Then
+					Arrow.Visible = True
+					fade.Visible = True
+'			fade.Top = TitlePnl.Height
+					fade.Top = ex.CollapsedHeight - fade.Height - TitlePnl.Height
+					bc.SetBitmapToImageView(FadeBitmap, fade)
+				Else
+					Arrow.Visible = False
+					fade.Visible = False
+				End If
+				Pnl.SetLayoutAnimated(0, 0, 0, Pnl.Width, ex.CollapsedHeight)
+				clvServices.Add(Pnl, ex)
+			Loop
+		Else
+			Log(LastException)
+		End If
+
+		Log($"List of Time Records = ${NumberFormat2((DateTime.Now - StartTime) / 1000, 0, 2, 2, False)} seconds to populate ${clvServices.Size} Time Records"$)
+
+	Catch
+		Log(LastException)
+	End Try
+
+'	For i = 0 To 8	'KC
+'		Dim Pnl As B4XView = xui.CreatePanel("")
+'		Pnl.SetLayoutAnimated(0, 0, 0, clvServices.AsView.Width, 300dip)
+'		Pnl.LoadLayout("ServicesItems")
+'		Dim TitlePnl As B4XView = Pnl.GetView(0)
+''		TitlePnl.Height = 30dip
+''LogColor(TitlePnl.Height, Colors.Yellow)
+'		lblServices.Text = $"Sampol "$ & i
+'		Dim BB As BBListItem = Pnl.GetView(1).GetView(BBListItemIndexInItems).Tag
+'		BB.TextEngine = TextEngine
+''		BB.Text = CreateItemText(i)	'KC
+'		BB.Text = GetContent(i)	'KC
+'		Dim ex As ExpandableItemData = Expandable.CreateValue(Pnl, "not used")
+'		ex.CollapsedHeight = 50dip
+'		ex.ExpandedHeight = Max(ex.CollapsedHeight, BB.mBase.Height + 40dip + TitlePnl.Height)
+'		Dim fade As B4XView = Pnl.GetView(1).GetView(1)
+'		Dim Arrow As B4XView = Pnl.GetView(0).GetView(1)
+'		If ex.ExpandedHeight > ex.CollapsedHeight Then
+'			Arrow.Visible = True
+'			fade.Visible = True
+''			fade.Top = TitlePnl.Height
+'			fade.Top = ex.CollapsedHeight - fade.Height - TitlePnl.Height
+'			bc.SetBitmapToImageView(FadeBitmap, fade)
+'		Else
+'			Arrow.Visible = False
+'			fade.Visible = False
+'		End If
+'		Pnl.SetLayoutAnimated(0, 0, 0, Pnl.Width, ex.CollapsedHeight)
+'		clvServices.Add(Pnl, ex)
+'	Next
+	clvServices_ScrollChanged(0)
+
+End Sub
+Private Sub btnServicesBack_Click
+	btnHome_Click
+End Sub
+
+Private Sub GetContent(iServiceID As Int) As String
+	Private Content As String
+	
+	Select iServiceID
+		Case 1 'from References
+			Content = _
+$"[TextSize=14][INDENT=1]Sourcing of underground water reservoirs, also [/INDENT][alignment=justify]known as [b]groundwater sourcing or groundwater exploration[/b], refers to the process of locating and accessing underground water supplies or aquifers for various purposes, such as drinking water supply, irrigation, industrial use, or environmental restoration. This is an essential activity in regions where surface water sources may be insufficient or unreliable.
+Here are the general steps involved in the sourcing of underground water reservoirs:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Site Assessment
+[*]Geophysical Surveys
+[*]Exploratory Drilling
+[*]Aquifer Testing
+[*]Water Quality Analysis
+[*]Well Design and Construction
+[*]Pumping and Monitoring
+[*]Regulatory Compliance
+[*]Maintenance and Rehabilitation
+[/color][/TextSize][/list][/b]"$
+		Case 2
+			Content = _
+$"[TextSize=14][INDENT=1]The installation of pumps and motors[/INDENT][alignment=justify] is a common process in various applications, including water supply systems, industrial processes, agricultural irrigation, and more. Proper installation is crucial to ensure the efficient and safe operation of these components.
+Here are the general steps involved in the installation of pumps and motors:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Site Preparation
+[*]Foundation Construction
+[*]Electrical Wiring
+[*]Alignment
+[*]Coupling Installation (if applicable
+[*]Piping and Plumbing
+[*]Prime the Pump (if applicable
+[*]Motor Alignment and Coupling Tightening (if applicable
+[*]Start-Up and Testing
+[*]Safety Measures
+[*]Documentation
+[/color][/TextSize][/list][/b]"$
+		Case 3
+			Content = _
+$"[TextSize=14][INDENT=1]Laying mainline distribution pipes is a [/INDENT][alignment=justify]crucial step in establishing a water distribution system for supplying water to homes, businesses, and other end-users. This process involves the installation of large-diameter pipes that serve as the primary conveyance system for transporting water from the source (such as a treatment plant or well) to various distribution points.
+Here are the key steps involved in laying mainline distribution pipes:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Design and Planning
+[*]Materials and Equipment Preparation
+[*]Route Survey and Marking
+[*]Excavation and Trenching
+[*]Bedding and Backfill
+[*]Pipe Installation
+[*]Pressure Testing
+[*]Disinfection and Flushing
+[*]Connection to Source and Distribution Points
+[*]Testing and Commissioning
+[*]Documentation and Record Keeping
+[/color][/TextSize][/list][/b]"$
+		Case 4
+			Content = _
+$"[TextSize=14][INDENT=1]Chlorination of water sources is a [/INDENT][alignment=justify]common and effective method of disinfecting water to make it safe for consumption and other uses. Chlorine is added to water to kill or inactivate harmful microorganisms, such as bacteria, viruses, and parasites, that may be present in the water. Chlorination is widely used in public water supply systems, industrial processes, and swimming pools, among other applications.
+Here's an overview of the chlorination process for water sources:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Selection of Chlorine Compound
+[*]Dosage Determination
+[*]Chlorine Addition
+[*]Contact Time
+[*]Residual Chlorine Monitoring
+[*]Adjustment of Ph
+[*]Dechlorination (if required
+[*]Sampling and Testing
+[*]Safety Precautions
+[*]Documentation
+[/color][/TextSize][/list][/b]"$
+		Case 5
+			Content = _
+$"[TextSize=14][INDENT=1]Filtration of surface water sources is a [/INDENT][alignment=justify]critical step in the treatment of water to make it safe for consumption and other uses. Surface water sources, such as rivers, lakes, and reservoirs, often contain suspended particles, sediments, algae, bacteria, and other impurities that need to be removed. Filtration is an essential part of the water treatment process and helps improve the water's clarity, taste, and safety.
+Here's an overview of the filtration process for surface water sources:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Coagulation and Flocculation
+[*]Screening (Optional
+[*]Filtration Media Selection
+[*]Filter Bed Preparation
+[*]Filtration Process
+[*]Backwashing (Cleaning)
+[*]Disinfection (Optional)
+[*]Post-Filtration Treatment (if needed)
+[*]Quality Monitoring
+[*]Distribution
+[/color][/TextSize][/list][/b]"$
+		Case 6
+			Content = _
+$"[TextSize=14][INDENT=1]Connecting households and businesses to [/INDENT][alignment=justify]mainlines, often referred to as water or utility mains, is a crucial step in providing these consumers with access to essential services like water supply, natural gas, electricity, or telecommunications. The process of connecting properties to mainlines varies depending on the type of utility being provided and local regulations.
+Here is a general overview of the steps involved in connecting households and businesses to mainlines:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Application and Permits
+[*]Utility Assessment and Planning
+[*]Design and Engineering
+[*]Construction and Installation
+[*]Connection to Property
+[*]Inspection and Testing
+[*]Connection Activation
+[*]Billing and Service Agreements
+[*]Ongoing Maintenance and Service
+[/color][/TextSize][/list][/b]"$
+		Case 7
+			Content = _
+$"[TextSize=14][INDENT=1]Meter reading, billing, and payment collection are[/INDENT][alignment=justify] crucial components of utility services, such as electricity, water, gas, and telecommunications. These processes ensure that consumers are accurately billed for the services they use and enable utility providers to maintain their infrastructure and operations.
+Here's an overview of each of these processes:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Meter Reading
+[*]Billing
+[*]Payment Collection
+[*]Customer Support and Dispute Resolution
+[*]Meter Maintenance and Replacement
+[*]Data Security and Privacy
+[/color][/TextSize][/list][/b]"$
+		Case 8
+			Content = _
+$"[TextSize=14][INDENT=1]After-sales services for utilities, including repairs [/INDENT][alignment=justify]of leaks and broken meters, are essential for maintaining the reliability and functionality of utility services and ensuring customer satisfaction. 
+Here's an overview of the after-sales services related to utility repairs:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Customer Reporting
+[*]Issue Assessment
+[*]Dispatching Technicians
+[*]Meter Replacement or Repair
+[*]Leak Repair
+[*]Emergency Response
+[*]Safety Measures
+[*]Communication with Customers
+[*]Quality Assurance
+[*]Testing and Verification
+[*]Billing Adjustments
+[*]Customer Feedback
+[/color][/TextSize][/list][/b]"$
+		Case 9
+			Content = _
+$"[TextSize=14][INDENT=1]Reducing non-revenue water (NRW) is a [/INDENT][alignment=justify]critical goal for water utilities and municipalities to improve the efficiency of water distribution systems, conserve water resources, and enhance financial sustainability. Non-revenue water refers to water that is lost or unaccounted for within the distribution system and includes both physical losses (leaks and pipe bursts) and commercial losses (unauthorized consumption and meter inaccuracies). 
+Here are strategies to reduce non-revenue water:
+[/Alignment][/TextSize][b][list style=ordered][TextSize=14][color=#2A91C3]
+[*]Leak Detection and Repair
+[*]Pressure Management
+[*]Asset Management and Rehabilitation
+[*]Meter Accuracy and Calibration
+[*]Metering and Data Management
+[*]Water Loss Audits
+[*]Customer Engagement
+[*]Real-Time Monitoring and Control
+[*]Illegal Connections and Theft Prevention
+[*]Data Analysis and Predictive Maintenance
+[*]Investment in Technology and Infrastructure
+[*]Regulatory Measures
+[/color][/TextSize][/list][/b]"$
+	End Select
+	
+	Return Content
+End Sub
+#End Region
+
+#Region Styles
+''Change Icon Colors
+Sub ChangeColorBasedOnAlphaLevel(bmp As B4XBitmap, NewColor As Int) As B4XBitmap
+	Dim bc As BitmapCreator
+	bc.Initialize(bmp.Width, bmp.Height)
+	bc.CopyPixelsFromBitmap(bmp)
+	Dim a1, a2 As ARGBColor
+	bc.ColorToARGB(NewColor, a1)
+	For y = 0 To bc.mHeight - 1
+		For x = 0 To bc.mWidth - 1
+			bc.GetARGB(x, y, a2)
+			If a2.a > 0 Then
+				a2.r = a1.r
+				a2.g = a1.g
+				a2.b = a1.b
+				bc.SetARGB(x, y, a2)
+			End If
+		Next
+	Next
+	Return bc.Bitmap
+End Sub
+
+Public Sub SetBitmapWithFitOrFill (vTargetView As B4XView, bmp As B4XBitmap)
+	vTargetView.SetBitmap(bmp)
+   #if B4A
+	'B4XView.SetBitmap sets the gravity in B4A to CENTER. This will prevent the bitmap from being scaled as needed so
+	'we switch to FILL
+	Dim iv As ImageView = vTargetView
+	iv.Gravity = Gravity.FILL
+   #End If
+End Sub
+
+''Set Bacground and Corner Radius 
+Sub BackgroundAndCornerRadius(View As View , CornerRadius As Int)
+	Dim cdw1 As ColorDrawable
+	cdw1.Initialize(Colors.White, CornerRadius)
+	View.Background = cdw1
+End Sub
+
+Sub SetStatusBarAndNavigationColor(clr As Int)
+	Try
+		Dim jo As JavaObject
+		jo.InitializeContext
+		Dim window As JavaObject = jo.RunMethodJO("getWindow", Null)
+		window.RunMethod("addFlags", Array (0x80000000))
+'		window.RunMethod("clearFlags", Array (0xFFF3FDFF))
+		window.RunMethod("clearFlags", Array (0x04000000))
+		window.RunMethod("setStatusBarColor", Array(clr))
+		Dim jo2 As JavaObject
+		jo2.InitializeContext
+		jo2.RunMethodJO("getWindow", Null).RunMethod("setNavigationBarColor", Array(clr))
+	Catch
+		ToastMessageShow("Some error with your android version ( <5 )",True)
+	End Try
+End Sub
+
+''Probably the worst way to implement Bottom Navigation :)
+Sub Panel_Selection_Attr(Selection As ImageView)
+	'PanelSelection.Initialize("PanelSelection")
+	btnHome.Bitmap = LoadBitmap(File.DirAssets,"Home.png")
+	btnAccount.Bitmap = LoadBitmap(File.DirAssets,"User.png")
+	btnCallUs.Bitmap = LoadBitmap(File.DirAssets,"callus.png")
+	btnBranches.Bitmap = LoadBitmap(File.DirAssets,"house-flood.png")
+	btnServices.Bitmap =  LoadBitmap(File.DirAssets,"services.png")
+	
+	Select Selection
+		Case btnHome
+			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"Home.png")
+		Case btnAccount
+			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"User.png")
+		Case btnCallUs
+			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"callus.png")
+		Case btnBranches
+			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"house-flood.png")
+		Case btnServices
+			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"services.png")
+	End Select
+	BackgroundAndCornerRadius(PanelSelection,15dip)
+	PanelSelection.Color = GlobalVariables.PriColor1
+	Dim Left As Int
+	Left = Selection.Left - 5%x
+	Activity.AddView(PanelSelection,Left,91%y,16%x,8%y)
+	SetBitmapWithFitOrFill(Selection, ChangeColorBasedOnAlphaLevel(bmp,Colors.White))
+	'PanelSelection.SendToBack
+	PanelSelection.SendToBack
+	Activity.Color = 0xFFF3FDFF
+End Sub
+#End Region
+
+Private Sub lblViewAll_Click
+	StartActivity(FAQsPage)
+End Sub

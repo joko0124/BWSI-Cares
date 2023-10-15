@@ -1,0 +1,396 @@
+--release
+--output
+C:\BWSI Cares\Objects
+--lib
+C:\Android\platforms\android-30\android.jar
+C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63810047128000\dex_v1\b4ashared.zip
+c:\android\tools\..\extras\b4a_local\unpacked-appcompat-63810047128000\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\appcompat\appcompat\1.0.2\unpacked-appcompat-1.0.2\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\core\core\1.0.2\unpacked-core-1.0.2\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-runtime\2.0.0\unpacked-lifecycle-runtime-2.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\versionedparcelable\versionedparcelable\1.0.0\unpacked-versionedparcelable-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\cursoradapter\cursoradapter\1.0.0\unpacked-cursoradapter-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-utils\1.0.0\unpacked-legacy-support-core-utils-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\documentfile\documentfile\1.0.1\unpacked-documentfile-1.0.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\loader\loader\1.0.0\unpacked-loader-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-livedata\2.0.0\unpacked-lifecycle-livedata-2.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-runtime\2.0.1\unpacked-core-runtime-2.0.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-livedata-core\2.0.0\unpacked-lifecycle-livedata-core-2.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-viewmodel\2.0.0\unpacked-lifecycle-viewmodel-2.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\localbroadcastmanager\localbroadcastmanager\1.0.0\unpacked-localbroadcastmanager-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\print\print\1.0.0\unpacked-print-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\fragment\fragment\1.0.0\unpacked-fragment-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-core-ui\1.0.0\unpacked-legacy-support-core-ui-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\customview\customview\1.0.0\unpacked-customview-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\viewpager\viewpager\1.0.0\unpacked-viewpager-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\coordinatorlayout\coordinatorlayout\1.0.0\unpacked-coordinatorlayout-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\drawerlayout\drawerlayout\1.0.0\unpacked-drawerlayout-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\slidingpanelayout\slidingpanelayout\1.0.0\unpacked-slidingpanelayout-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\interpolator\interpolator\1.0.0\unpacked-interpolator-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\swiperefreshlayout\swiperefreshlayout\1.0.0\unpacked-swiperefreshlayout-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\asynclayoutinflater\asynclayoutinflater\1.0.0\unpacked-asynclayoutinflater-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\vectordrawable\vectordrawable\1.0.1\unpacked-vectordrawable-1.0.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\vectordrawable\vectordrawable-animated\1.0.0\unpacked-vectordrawable-animated-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-views\1.4.0\unpacked-emoji2-views-1.4.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-emojipicker\1.4.0\unpacked-emoji2-emojipicker-1.4.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2\1.4.0\unpacked-emoji2-1.4.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2\1.4.0\unpacked-emoji2-1.4.0\jars\repackaged.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-bundled\1.4.0\unpacked-emoji2-bundled-1.4.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\emoji2\emoji2-views-helper\1.4.0\unpacked-emoji2-views-helper-1.4.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\startup\startup-runtime\1.1.1\unpacked-startup-runtime-1.1.1\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\legacy\legacy-support-v4\1.0.0\unpacked-legacy-support-v4-1.0.0\jars\classes.zip
+c:\android\tools\..\extras\b4a_remote\androidx\media\media\1.0.1\unpacked-media-1.0.1\jars\classes.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-appcompat-63810047128000\dex_v1\appcompat.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-core-63810047128000\dex_v1\core.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-floatingactionbutton-63594459648000\dex_v1\floatingactionbutton.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-phone-63810047130000\dex_v1\phone.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-reflection-63810047130000\dex_v1\reflection.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-runtimepermissions-63810047130000\dex_v1\runtimepermissions.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-splashfade-63528562794000\dex_v1\splashfade.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-sql-63810047130000\dex_v1\sql.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xcustomlistview-63810047130000\dex_v1\xcustomlistview.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xmllayoutbuilder-63535705274000\dex_v1\xmllayoutbuilder.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xui-63810047130000\dex_v1\xui.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-kotlin-stdlib-1.6.10-63810047130000\dex_v1\kotlin-stdlib-1.6.10.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63810047128000\dex_v1\javaobject.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-stringutils-63810047130000\dex_v1\stringutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-animation-63810047128000\dex_v1\animation.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-bitmapcreator-63810047128000\dex_v1\bitmapcreator.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-63810047130000\dex_v1\okhttp.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-dateutils-63810047128000\dex_v1\dateutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-ime-63810047128000\dex_v1\ime.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-4.9.0-63810047130000\dex_v1\okhttp-4.9.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okio-2.8.0-63810047130000\dex_v1\okio-2.8.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-urlconnection-4.9.3-63810047130000\dex_v1\okhttp-urlconnection-4.9.3.zip
+c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation\1.1.0\annotation-1.1.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\collection\collection\1.1.0\collection-1.1.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common\2.0.0\lifecycle-common-2.0.0.zip
+c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-common\2.0.1\core-common-2.0.1.zip
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\appcompat\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\coordinatorlayout\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\core\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\bundled\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\emojipicker\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\viewsintegration\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\emoji2\widget\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\media\R.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$anim.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$array.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$attr.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$bool.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$color.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$id.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$integer.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$layout.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$raw.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$string.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$style.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\androidx\startup\R.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$anim.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$array.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$attr.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$bool.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$color.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$id.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$integer.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$layout.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$raw.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$string.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$style.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\anywheresoftware\b4a\objects\R.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\animatedcounter.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\anotherprogressbar$ResumableSub_BusyLoop.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\anotherprogressbar.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\assegmentedtab$_assegmentedtab_itemtextproperties.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\assegmentedtab$_assegmentedtab_seperatorproperties.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\assegmentedtab$_assegmentedtab_tab.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\assegmentedtab.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xbitset.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xbreadcrumb.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xbytesbuilder.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcache$_b4xcacheitem.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcache.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcollections.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcolortemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcolortemplate$_colorpickerpart.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcolortemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcombobox$ResumableSub_RaiseEvent.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcombobox.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xcomparatorsort.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdatetemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdatetemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdialog$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdialog$ResumableSub_ShowCustom.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdialog$ResumableSub_ShowTemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xdialog.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xfloattextfield$ResumableSub_SwitchFromPasswordToRegular.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xfloattextfield.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xformatter$_b4xformatdata.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xformatter.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4ximageview.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xinputtemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xinputtemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xlisttemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xlisttemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xloadingindicator$ResumableSub_MainLoop.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xloadingindicator.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xlongtexttemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xorderedmap.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xplusminus$ResumableSub_StartDownLoop.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xplusminus.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xradiobutton$ResumableSub_SetValueImpl.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xradiobutton.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xsearchtemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xsearchtemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xseekbar.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xset.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xsignaturetemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xswitch$ResumableSub_SetValueImpl.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xswitch.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xtimedtemplate$ResumableSub_Show.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\b4xtimedtemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeparser$ResumableSub_SetImageView.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeparser$_bbcodeparsedata.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeparser$_bbcodetagnode.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeparser$_bbcodetextnode.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeparser.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeview$_internalbbviewurl.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bbcodeview.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bblabel.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bblistitem$ResumableSub_UpdateVisibleRegion.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bblistitem.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcconnectedruns.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcfontmetrics.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcglyph.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcglyphandoffset.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcparagraph.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcparagraphstyle.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcsinglestylesection.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcstyledunderline.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bctextchars.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bctextline.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bctextrun.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine$_bcunbreakabletext.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\bctextengine.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\clvexpandable$ResumableSub_ResizeItem.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\clvexpandable$_expandableitemdata.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\clvexpandable.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage$B4AMenuItemsClickListener.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage$HandleKeyDelayed.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage$ResumeMessage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage$WaitForLayout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dataprivacypage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\dbutils.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage$B4AMenuItemsClickListener.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage$HandleKeyDelayed.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage$ResumeMessage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage$WaitForLayout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\faqspage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\globalvariables.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage$B4AMenuItemsClickListener.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage$HandleKeyDelayed.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage$ResumeMessage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage$WaitForLayout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\historypage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httpjob$_multipartfiledata.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httpjob.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httputils2service$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httputils2service$2.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httputils2service$httputils2service_BR.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\httputils2service.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\imageslider$ResumableSub_GetImage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\imageslider$ResumableSub_NextImage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\imageslider$ResumableSub_PrevImage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\imageslider$_imagesliderimage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\imageslider.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\madewithlove.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$B4AMenuItemsClickListener.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$HandleKeyDelayed.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$ResumableSub_CheckConnected.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$ResumableSub_imgSlider_GetImage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$ResumableSub_InitServices.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$ResumableSub_ShowSplash.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$ResumeMessage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$WaitForLayout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main$_mynews.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\main.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage$B4AMenuItemsClickListener.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage$HandleKeyDelayed.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage$ResumeMessage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage$WaitForLayout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\newspage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$anim.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$array.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$attr.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$bool.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$color.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$dimen.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$drawable.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$id.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$integer.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$layout.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$raw.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$string.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$style.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R$styleable.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\R.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\roundslider.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\scrollinglabel$ResumableSub_StartScrolling.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\scrollinglabel.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\starter$1.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\starter$2.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\starter$starter_BR.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\starter.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\swiftbutton.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\xuiviewsutils.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_dataprivacy.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_faqs.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_faqscontent.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_history.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_landingcontents.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_landingpage.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_login.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_newdetails.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_newscards.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_searchtemplate.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_servicesdetails.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_servicesitems.dex
+C:\BWSI Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_splash.dex
