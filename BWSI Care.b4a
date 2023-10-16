@@ -1,104 +1,110 @@
 ﻿Build1=Default,com.bwsi.cares
 File1=1.jpg
-File10=bwc.png
-File11=bwsi care.png
-File12=bwsi.png
-File13=callus.png
-File14=DataPrivacy.bal
-File15=DBase.db
-File16=edit.png
-File17=FAQs.bal
-File18=FAQsContent.bal
-File19=header.jpg
+File10=branches.png
+File11=bwc.png
+File12=bwsi care.png
+File13=bwsi.png
+File14=callus.png
+File15=DataPrivacy.bal
+File16=DBase.db
+File17=edit.png
+File18=explore.png
+File19=FAQs.bal
 File2=2.jpg
-File20=Helvetica.ttf
-File21=History.bal
-File22=home.png
-File23=house-flood.png
-File24=landingcontents.bal
-File25=landingpage.bal
-File26=light.ttf
-File27=Login.bal
-File28=NewDetails.bal
-File29=News1.jpg
+File20=FAQsContent.bal
+File21=header.jpg
+File22=Helvetica.ttf
+File23=History.bal
+File24=home.png
+File25=house-flood.png
+File26=landingcontents.bal
+File27=landingpage.bal
+File28=light.ttf
+File29=Login.bal
 File3=3.jpg
-File30=News2.jpg
-File31=News4.png
-File32=News6.jpg
-File33=NewsCards.bal
-File34=person0.jpg
-File35=person1.jpg
-File36=person2.jpg
-File37=person3.jpg
-File38=services.jpg
-File39=services.png
+File30=NewDetails.bal
+File31=News1.jpg
+File32=News2.jpg
+File33=News4.png
+File34=News6.jpg
+File35=NewsCards.bal
+File36=person0.jpg
+File37=person1.jpg
+File38=person2.jpg
+File39=person3.jpg
 File4=4.jpg
-File40=services-desc.jpg
-File41=ServicesDetails.bal
-File42=ServicesItems.bal
-File43=Splash.bal
-File44=splash.jpg
-File45=splash.png
-File46=table-like.png
-File47=ultralight.ttf
-File48=user.png
-File49=web1.jpg
+File40=services.jpg
+File41=services.png
+File42=services-desc.jpg
+File43=ServicesDetails.bal
+File44=ServicesItems.bal
+File45=Splash.bal
+File46=splash.jpg
+File47=splash.png
+File48=table-like.png
+File49=ultralight.ttf
 File5=65.jpg
-File50=web2.jpg
-File51=web3.jpg
-File52=web4.jpg
+File50=user.png
+File51=water-drop.png
+File52=web1.jpg
+File53=web2.jpg
+File54=web3.jpg
+File55=web4.jpg
 File6=65years.jpg
 File7=arrow.png
 File8=arrow2.png
 File9=bold.ttf
 FileGroup1=Default Group\Images
-FileGroup10=Default Group\Icons
-FileGroup11=Default Group\Images
-FileGroup12=Default Group
-FileGroup13=Default Group\Icons
-FileGroup14=Default Group\Activity Layouts
-FileGroup15=Default Group
-FileGroup16=Default Group\Icons
-FileGroup17=Default Group\Activity Layouts
+FileGroup10=Default Group
+FileGroup11=Default Group\Icons
+FileGroup12=Default Group\Images
+FileGroup13=Default Group
+FileGroup14=Default Group\Icons
+FileGroup15=Default Group\Activity Layouts
+FileGroup16=Default Group
+FileGroup17=Default Group\Icons
 FileGroup18=Default Group
-FileGroup19=Default Group\Images
+FileGroup19=Default Group\Activity Layouts
 FileGroup2=Default Group\Images
-FileGroup20=Default Group\Fonts
-FileGroup21=Default Group\Activity Layouts
-FileGroup22=Default Group\Icons
-FileGroup23=Default Group\Icons
-FileGroup24=Default Group\Activity Layouts
-FileGroup25=Default Group\Activity Layouts
-FileGroup26=Default Group\Fonts
+FileGroup20=Default Group
+FileGroup21=Default Group\Images
+FileGroup22=Default Group\Fonts
+FileGroup23=Default Group\Activity Layouts
+FileGroup24=Default Group\Icons
+FileGroup25=Default Group\Icons
+FileGroup26=Default Group\Activity Layouts
 FileGroup27=Default Group\Activity Layouts
-FileGroup28=Default Group\Activity Layouts
-FileGroup29=Default Group\Images
+FileGroup28=Default Group\Fonts
+FileGroup29=Default Group\Activity Layouts
 FileGroup3=Default Group\Images
-FileGroup30=Default Group\Images
+FileGroup30=Default Group\Activity Layouts
 FileGroup31=Default Group\Images
 FileGroup32=Default Group\Images
-FileGroup33=Default Group\Activity Layouts
-FileGroup34=Default Group\Dummy Persons
-FileGroup35=Default Group\Dummy Persons
+FileGroup33=Default Group\Images
+FileGroup34=Default Group\Images
+FileGroup35=Default Group\Activity Layouts
 FileGroup36=Default Group\Dummy Persons
 FileGroup37=Default Group\Dummy Persons
-FileGroup38=Default Group\Images
-FileGroup39=Default Group\Icons
+FileGroup38=Default Group\Dummy Persons
+FileGroup39=Default Group\Dummy Persons
 FileGroup4=Default Group\Images
 FileGroup40=Default Group\Images
-FileGroup41=Default Group\Activity Layouts
-FileGroup42=Default Group\Activity Layouts
+FileGroup41=Default Group\Icons
+FileGroup42=Default Group\Images
 FileGroup43=Default Group\Activity Layouts
-FileGroup44=Default Group\Images
-FileGroup45=Default Group\Images
-FileGroup46=Default Group
-FileGroup47=Default Group\Fonts
-FileGroup48=Default Group\Icons
-FileGroup49=Default Group\Images
+FileGroup44=Default Group\Activity Layouts
+FileGroup45=Default Group\Activity Layouts
+FileGroup46=Default Group\Images
+FileGroup47=Default Group\Images
+FileGroup48=Default Group
+FileGroup49=Default Group\Fonts
 FileGroup5=Default Group\Images
-FileGroup50=Default Group\Images
-FileGroup51=Default Group\Images
+FileGroup50=Default Group\Icons
+FileGroup51=Default Group
 FileGroup52=Default Group\Images
+FileGroup53=Default Group\Images
+FileGroup54=Default Group\Images
+FileGroup55=Default Group\Images
 FileGroup6=Default Group\Images
 FileGroup7=Default Group\Images
 FileGroup8=Default Group\Images
@@ -119,19 +125,20 @@ Library7=runtimepermissions
 Library8=splashfade
 Library9=sql
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.
-Module1=BBListItem
-Module10=Starter
-Module2=CLVExpandable
-Module3=DataPrivacyPage
-Module4=DBUtils
-Module5=FAQsPage
-Module6=GlobalVariables
-Module7=HistoryPage
-Module8=ImageSlider
-Module9=NewsPage
-NumberOfFiles=52
+Module1=ASBottomMenu
+Module10=NewsPage
+Module11=Starter
+Module2=BBListItem
+Module3=CLVExpandable
+Module4=DataPrivacyPage
+Module5=DBUtils
+Module6=FAQsPage
+Module7=GlobalVariables
+Module8=HistoryPage
+Module9=ImageSlider
+NumberOfFiles=55
 NumberOfLibraries=14
-NumberOfModules=10
+NumberOfModules=11
 Version=12.2
 @EndOfDesignText@
 #Region  Project Attributes 
@@ -169,11 +176,6 @@ Sub Globals
 	Private pnlMain As Panel
 	
 	Private PanelSelection As Panel
-	Private btnAccount As ImageView
-	Private btnBranches As ImageView
-	Private btnCallUs As ImageView
-	Private btnHome As ImageView
-	Private btnServices As ImageView
 	
 	Private pnlSplash As Panel
 	Private bitmp(4) As Bitmap
@@ -223,6 +225,7 @@ Sub Globals
 	
 	'Login
 	Private cdTxtBox As ColorDrawable
+	Private MainMenu As ASBottomMenu
 End Sub
 
 #Region Activity Events
@@ -252,8 +255,6 @@ Sub Activity_Create(FirstTime As Boolean)
 	timer1.Enabled = True
 	
 	SetStatusBarAndNavigationColor(GlobalVariables.PriColor1)
-	
-	Panel_Selection_Attr(btnHome)
 
 	InitializeDatas
 	
@@ -283,14 +284,24 @@ Sub Activity_Create(FirstTime As Boolean)
 	bc.Initialize(Activity.Width, 40dip)
 	bc.FillGradient(Array As Int(0x00FFFFFF, GlobalVariables.PriColor3), bc.TargetRect, "TOP_BOTTOM")
 	FadeBitmap = bc.Bitmap
-
+	MainMenu.SetIcon1(LoadBitmap(File.DirAssets, "explore.png"))
+	MainMenu.SetIcon2(LoadBitmap(File.DirAssets, "services.png"))
+	MainMenu.SetIcon5(LoadBitmap(File.DirAssets, "branches.png"))
+	MainMenu.SetIcon3(LoadBitmap(File.DirAssets, "callus.png"))
+	MainMenu.SetIcon4(LoadBitmap(File.DirAssets, "user.png"))
+	
+	MainMenu.SetText1("Explore")
+	MainMenu.SetText2("Services")
+	MainMenu.SetText5("Branches")
+	MainMenu.SetText3("Call Us")
+	MainMenu.SetText4("Account")
 End Sub
 
 Sub Activity_Resume
 	'	tmrSplash.Enabled = False
 	'	pnlSplash.Visible = False
 	scvMain.Visible = True
-	btnHome_Click
+	MainMenu_Page1Click
 	timer1.Enabled = True
 	scvMain.ScrollPosition = 0
 	pnlAccount.Visible = False
@@ -467,40 +478,25 @@ End Sub
 Private Sub fabApply_Click
 	StartActivity(DataPrivacyPage)
 End Sub
-Private Sub btnHome_Click
+Private Sub MainMenu_Page1Click
 	pnlAccount.Visible = False
 	pnlServices.Visible = False
-	PanelSelection.RemoveView
-	Panel_Selection_Attr(btnHome)
 	scvMain.Visible = True
-	fabApply.Visible = True
+	fabApply.Visible = True	
 End Sub
 
-Private Sub btnServices_Click
-'	timer1.Enabled = False
-'	StartActivity(ServicesPage)
+Private Sub MainMenu_Page2Click
 	pnlAccount.Visible = False
 	pnlServices.Visible = True
 	InitServices
-	PanelSelection.RemoveView
-	Panel_Selection_Attr(btnServices)
-	scvMain.Visible = False
+	scvMain.Visible = False	
 End Sub
 
-
-Private Sub btnBranches_Click
-	PanelSelection.RemoveView
-	Panel_Selection_Attr(btnBranches)
+Private Sub MainMenu_Page3Click
+	
 End Sub
 
-Private Sub btnCallUs_Click
-	PanelSelection.RemoveView
-	Panel_Selection_Attr(btnCallUs)
-End Sub
-
-Private Sub btnAccount_Click
-	PanelSelection.RemoveView
-	Panel_Selection_Attr(btnAccount)
+Private Sub MainMenu_Page4Click
 	scvMain.Visible = False
 	pnlServices.Visible = False
 	pnlAccount.Visible = True
@@ -509,7 +505,11 @@ Private Sub btnAccount_Click
 	cdTxtBox.Initialize2(Colors.Transparent, 0,0, Colors.Transparent)
 	txtLoginEMail.Background = cdTxtBox
 	txtLoginPassword.Background = cdTxtBox
-	fabApply.Visible = False
+	fabApply.Visible = False	
+End Sub
+
+Private Sub MainMenu_Page5Click
+	
 End Sub
 
 #End Region
@@ -646,8 +646,9 @@ Private Sub InitServices
 	clvServices_ScrollChanged(0)
 
 End Sub
+
 Private Sub btnServicesBack_Click
-	btnHome_Click
+	MainMenu_Page1Click
 End Sub
 
 Private Sub GetContent(iServiceID As Int) As String
@@ -863,30 +864,17 @@ End Sub
 ''Probably the worst way to implement Bottom Navigation :)
 Sub Panel_Selection_Attr(Selection As ImageView)
 	'PanelSelection.Initialize("PanelSelection")
-	btnHome.Bitmap = LoadBitmap(File.DirAssets,"Home.png")
-	btnAccount.Bitmap = LoadBitmap(File.DirAssets,"User.png")
-	btnCallUs.Bitmap = LoadBitmap(File.DirAssets,"callus.png")
-	btnBranches.Bitmap = LoadBitmap(File.DirAssets,"house-flood.png")
-	btnServices.Bitmap =  LoadBitmap(File.DirAssets,"services.png")
-	
+'	btnHome.Bitmap = LoadBitmap(File.DirAssets,"Home.png")
 	Select Selection
-		Case btnHome
-			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"Home.png")
-		Case btnAccount
-			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"User.png")
-		Case btnCallUs
-			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"callus.png")
-		Case btnBranches
-			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"house-flood.png")
-		Case btnServices
-			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"services.png")
+'		Case btnHome
+'			Dim bmp As B4XBitmap = LoadBitmap(File.DirAssets,"Home.png")
 	End Select
 	BackgroundAndCornerRadius(PanelSelection,15dip)
 	PanelSelection.Color = GlobalVariables.PriColor1
 	Dim Left As Int
 	Left = Selection.Left - 5%x
 	Activity.AddView(PanelSelection,Left,91%y,16%x,8%y)
-	SetBitmapWithFitOrFill(Selection, ChangeColorBasedOnAlphaLevel(bmp,Colors.White))
+'	SetBitmapWithFitOrFill(Selection, ChangeColorBasedOnAlphaLevel(bmp,Colors.White))
 	'PanelSelection.SendToBack
 	PanelSelection.SendToBack
 	Activity.Color = 0xFFF3FDFF

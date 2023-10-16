@@ -75,50 +75,16 @@ views.get("clvservices").vw.setWidth((int)((views.get("pnlservices").vw.getWidth
 //BA.debugLineNum = 53;BA.debugLine="clvServices.SetTopAndBottom(imgServices.Bottom + 10dip, pnlServices.Height)"[landingpage/General script]
 views.get("clvservices").vw.setTop((int)((views.get("imgservices").vw.getTop() + views.get("imgservices").vw.getHeight())+(10d * scale)));
 views.get("clvservices").vw.setHeight((int)((views.get("pnlservices").vw.getHeight()) - ((views.get("imgservices").vw.getTop() + views.get("imgservices").vw.getHeight())+(10d * scale))));
-//BA.debugLineNum = 55;BA.debugLine="btnHome.Width = 6%x"[landingpage/General script]
-views.get("btnhome").vw.setWidth((int)((6d / 100 * width)));
-//BA.debugLineNum = 56;BA.debugLine="btnHome.Height = btnHome.Width"[landingpage/General script]
-views.get("btnhome").vw.setHeight((int)((views.get("btnhome").vw.getWidth())));
-//BA.debugLineNum = 57;BA.debugLine="btnHome.Left = 10%x"[landingpage/General script]
-views.get("btnhome").vw.setLeft((int)((10d / 100 * width)));
-//BA.debugLineNum = 58;BA.debugLine="btnHome.VerticalCenter = 95%y"[landingpage/General script]
-views.get("btnhome").vw.setTop((int)((95d / 100 * height) - (views.get("btnhome").vw.getHeight() / 2)));
-//BA.debugLineNum = 60;BA.debugLine="btnServices.Width = 6%x"[landingpage/General script]
-views.get("btnservices").vw.setWidth((int)((6d / 100 * width)));
-//BA.debugLineNum = 61;BA.debugLine="btnServices.Height = btnServices.Width"[landingpage/General script]
-views.get("btnservices").vw.setHeight((int)((views.get("btnservices").vw.getWidth())));
-//BA.debugLineNum = 62;BA.debugLine="btnServices.Left = btnHome.Right + 12.5%x"[landingpage/General script]
-views.get("btnservices").vw.setLeft((int)((views.get("btnhome").vw.getLeft() + views.get("btnhome").vw.getWidth())+(12.5d / 100 * width)));
-//BA.debugLineNum = 63;BA.debugLine="btnServices.VerticalCenter = 95%y"[landingpage/General script]
-views.get("btnservices").vw.setTop((int)((95d / 100 * height) - (views.get("btnservices").vw.getHeight() / 2)));
-//BA.debugLineNum = 65;BA.debugLine="btnBranches.Width = 6%x"[landingpage/General script]
-views.get("btnbranches").vw.setWidth((int)((6d / 100 * width)));
-//BA.debugLineNum = 66;BA.debugLine="btnBranches.Height = btnHome.Width"[landingpage/General script]
-views.get("btnbranches").vw.setHeight((int)((views.get("btnhome").vw.getWidth())));
-//BA.debugLineNum = 67;BA.debugLine="btnBranches.Left = btnServices.Right + 12.5%x"[landingpage/General script]
-views.get("btnbranches").vw.setLeft((int)((views.get("btnservices").vw.getLeft() + views.get("btnservices").vw.getWidth())+(12.5d / 100 * width)));
-//BA.debugLineNum = 68;BA.debugLine="btnBranches.VerticalCenter = 95%y"[landingpage/General script]
-views.get("btnbranches").vw.setTop((int)((95d / 100 * height) - (views.get("btnbranches").vw.getHeight() / 2)));
-//BA.debugLineNum = 70;BA.debugLine="btnCallUs.Width = 6%x"[landingpage/General script]
-views.get("btncallus").vw.setWidth((int)((6d / 100 * width)));
-//BA.debugLineNum = 71;BA.debugLine="btnCallUs.Height = btnHome.Width"[landingpage/General script]
-views.get("btncallus").vw.setHeight((int)((views.get("btnhome").vw.getWidth())));
-//BA.debugLineNum = 72;BA.debugLine="btnCallUs.Left = btnBranches.Right + 12.5%x"[landingpage/General script]
-views.get("btncallus").vw.setLeft((int)((views.get("btnbranches").vw.getLeft() + views.get("btnbranches").vw.getWidth())+(12.5d / 100 * width)));
-//BA.debugLineNum = 73;BA.debugLine="btnCallUs.VerticalCenter = 95%y"[landingpage/General script]
-views.get("btncallus").vw.setTop((int)((95d / 100 * height) - (views.get("btncallus").vw.getHeight() / 2)));
-//BA.debugLineNum = 75;BA.debugLine="btnAccount.Width = 6%x"[landingpage/General script]
-views.get("btnaccount").vw.setWidth((int)((6d / 100 * width)));
-//BA.debugLineNum = 76;BA.debugLine="btnAccount.Height = btnHome.Width"[landingpage/General script]
-views.get("btnaccount").vw.setHeight((int)((views.get("btnhome").vw.getWidth())));
-//BA.debugLineNum = 77;BA.debugLine="btnAccount.Left = btnCallUs.Right + 12.5%x"[landingpage/General script]
-views.get("btnaccount").vw.setLeft((int)((views.get("btncallus").vw.getLeft() + views.get("btncallus").vw.getWidth())+(12.5d / 100 * width)));
-//BA.debugLineNum = 78;BA.debugLine="btnAccount.VerticalCenter = 95%y"[landingpage/General script]
-views.get("btnaccount").vw.setTop((int)((95d / 100 * height) - (views.get("btnaccount").vw.getHeight() / 2)));
-//BA.debugLineNum = 79;BA.debugLine="fabApply.Right = 90%x"[landingpage/General script]
+//BA.debugLineNum = 55;BA.debugLine="fabApply.Right = 90%x"[landingpage/General script]
 views.get("fabapply").vw.setLeft((int)((90d / 100 * width) - (views.get("fabapply").vw.getWidth())));
-//BA.debugLineNum = 80;BA.debugLine="fabApply.Top = 80%y"[landingpage/General script]
+//BA.debugLineNum = 56;BA.debugLine="fabApply.Top = 80%y"[landingpage/General script]
 views.get("fabapply").vw.setTop((int)((80d / 100 * height)));
+//BA.debugLineNum = 58;BA.debugLine="MainMenu.SetTopAndBottom(85%y, 100%y)"[landingpage/General script]
+views.get("mainmenu").vw.setTop((int)((85d / 100 * height)));
+views.get("mainmenu").vw.setHeight((int)((100d / 100 * height) - ((85d / 100 * height))));
+//BA.debugLineNum = 59;BA.debugLine="MainMenu.SetLeftAndRight(0, 100%x)"[landingpage/General script]
+views.get("mainmenu").vw.setLeft((int)(0d));
+views.get("mainmenu").vw.setWidth((int)((100d / 100 * width) - (0d)));
 
 }
 }

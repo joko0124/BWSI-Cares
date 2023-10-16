@@ -66,17 +66,28 @@ views.get("person4_img").vw.setHeight((int)((views.get("person1_img").vw.getHeig
 views.get("person4_img").vw.setWidth((int)((views.get("person1_img").vw.getHeight())));
 views.get("person4_img").vw.setLeft((int)((20d / 100 * width)));
 views.get("person4_img").vw.setTop((int)((views.get("pnlreader").vw.getHeight())/2d - (views.get("person4_img").vw.getHeight() / 2)));
+//BA.debugLineNum = 67;BA.debugLine="lblReadBy.SetLeftAndRight(Person4_Img.Right +4%x,45%y)"[NewDetails/General script]
 views.get("lblreadby").vw.setLeft((int)((views.get("person4_img").vw.getLeft() + views.get("person4_img").vw.getWidth())+(4d / 100 * width)));
 views.get("lblreadby").vw.setWidth((int)((45d / 100 * height) - ((views.get("person4_img").vw.getLeft() + views.get("person4_img").vw.getWidth())+(4d / 100 * width))));
+//BA.debugLineNum = 68;BA.debugLine="lblReadBy.Height = 7%y"[NewDetails/General script]
 views.get("lblreadby").vw.setHeight((int)((7d / 100 * height)));
+//BA.debugLineNum = 69;BA.debugLine="lblReadBy.VerticalCenter = pnlReader.Height/2"[NewDetails/General script]
 views.get("lblreadby").vw.setTop((int)((views.get("pnlreader").vw.getHeight())/2d - (views.get("lblreadby").vw.getHeight() / 2)));
+//BA.debugLineNum = 71;BA.debugLine="More_btn.Height = 7%y"[NewDetails/General script]
 views.get("more_btn").vw.setHeight((int)((7d / 100 * height)));
+//BA.debugLineNum = 72;BA.debugLine="More_btn.Width = More_btn.Height"[NewDetails/General script]
 views.get("more_btn").vw.setWidth((int)((views.get("more_btn").vw.getHeight())));
+//BA.debugLineNum = 73;BA.debugLine="More_btn.VerticalCenter = pnlReader.Height/2"[NewDetails/General script]
 views.get("more_btn").vw.setTop((int)((views.get("pnlreader").vw.getHeight())/2d - (views.get("more_btn").vw.getHeight() / 2)));
+//BA.debugLineNum = 74;BA.debugLine="More_btn.Right = 89%x"[NewDetails/General script]
 views.get("more_btn").vw.setLeft((int)((89d / 100 * width) - (views.get("more_btn").vw.getWidth())));
+//BA.debugLineNum = 76;BA.debugLine="Rate_Lbl.Width = 18%x"[NewDetails/General script]
 views.get("rate_lbl").vw.setWidth((int)((18d / 100 * width)));
+//BA.debugLineNum = 77;BA.debugLine="Rate_Lbl.Height = 5%y"[NewDetails/General script]
 views.get("rate_lbl").vw.setHeight((int)((5d / 100 * height)));
+//BA.debugLineNum = 78;BA.debugLine="Rate_Lbl.Bottom = Panel2.Height -2%y"[NewDetails/General script]
 views.get("rate_lbl").vw.setTop((int)((views.get("panel2").vw.getHeight())-(2d / 100 * height) - (views.get("rate_lbl").vw.getHeight())));
+//BA.debugLineNum = 79;BA.debugLine="Rate_Lbl.Right = 86%x"[NewDetails/General script]
 views.get("rate_lbl").vw.setLeft((int)((86d / 100 * width) - (views.get("rate_lbl").vw.getWidth())));
 
 }

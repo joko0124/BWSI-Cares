@@ -168,7 +168,7 @@ _jo = new anywheresoftware.b4j.object.JavaObject();
  //BA.debugLineNum = 20;BA.debugLine="jo.InitializeStatic(\"java.util.Locale\").RunMethod";
 _jo.InitializeStatic("java.util.Locale").RunMethod("setDefault",new Object[]{_jo.GetField("US")});
  //BA.debugLineNum = 22;BA.debugLine="Log(GlobalVariables.RTP.GetSafeDirDefaultExternal";
-anywheresoftware.b4a.keywords.Common.LogImpl("39043974",mostCurrent._globalvariables._rtp /*anywheresoftware.b4a.objects.RuntimePermissions*/ .GetSafeDirDefaultExternal(""),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("79109510",mostCurrent._globalvariables._rtp /*anywheresoftware.b4a.objects.RuntimePermissions*/ .GetSafeDirDefaultExternal(""),0);
  //BA.debugLineNum = 23;BA.debugLine="DBPath = DBUtils.CopyDBFromAssets(DBName)";
 _dbpath = mostCurrent._dbutils._copydbfromassets /*String*/ (processBA,_dbname);
  //BA.debugLineNum = 24;BA.debugLine="DBCon.Initialize(DBPath, DBName,False)";

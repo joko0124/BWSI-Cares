@@ -71,11 +71,17 @@ views.get("pnlregister").vw.setTop((int)((views.get("pnlheader").vw.getHeight())
 views.get("pnlregister").vw.setHeight((int)((83d / 100 * height) - ((views.get("pnlheader").vw.getHeight())/2d+(35d * scale))));
 views.get("btnreg").vw.setLeft((int)((views.get("pnlregister").vw.getLeft() + views.get("pnlregister").vw.getWidth()/2) - (views.get("btnreg").vw.getWidth() / 2)));
 views.get("btnreg").vw.setTop((int)((views.get("pnlregister").vw.getTop() + views.get("pnlregister").vw.getHeight()) - (views.get("btnreg").vw.getHeight() / 2)));
+//BA.debugLineNum = 55;BA.debugLine="REGlblLogin.Left = 10%x"[Login/General script]
 views.get("reglbllogin").vw.setLeft((int)((10d / 100 * width)));
+//BA.debugLineNum = 56;BA.debugLine="REGlblLogin.Top = 3%y"[Login/General script]
 views.get("reglbllogin").vw.setTop((int)((3d / 100 * height)));
+//BA.debugLineNum = 57;BA.debugLine="REGbtnRegister.Right = pnlLogin.Width - 10%x"[Login/General script]
 views.get("regbtnregister").vw.setLeft((int)((views.get("pnllogin").vw.getWidth())-(10d / 100 * width) - (views.get("regbtnregister").vw.getWidth())));
+//BA.debugLineNum = 58;BA.debugLine="REGbtnRegister.Top = 3%y"[Login/General script]
 views.get("regbtnregister").vw.setTop((int)((3d / 100 * height)));
+//BA.debugLineNum = 59;BA.debugLine="lblRegisterStyle.Top = REGbtnRegister.Bottom + 5dip"[Login/General script]
 views.get("lblregisterstyle").vw.setTop((int)((views.get("regbtnregister").vw.getTop() + views.get("regbtnregister").vw.getHeight())+(5d * scale)));
+//BA.debugLineNum = 60;BA.debugLine="lblRegisterStyle.HorizontalCenter = REGbtnRegister.HorizontalCenter"[Login/General script]
 views.get("lblregisterstyle").vw.setLeft((int)((views.get("regbtnregister").vw.getLeft() + views.get("regbtnregister").vw.getWidth()/2) - (views.get("lblregisterstyle").vw.getWidth() / 2)));
 
 }
