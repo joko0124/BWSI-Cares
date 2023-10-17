@@ -17,6 +17,10 @@ Sub Globals
 	Private TextEngine As BCTextEngine
 	Private xui As XUI
 	Private FilterTab As ASSegmentedTab
+	Private clvTabs As CustomListView
+	Private clvFAQs As CustomListView
+	Type itemInfo(ID As Int, parentID As String, ascendantIDs As List)
+	Private expandable As CLVExpandable
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -25,13 +29,25 @@ Sub Activity_Create(FirstTime As Boolean)
 	TextEngine.Initialize(Activity)
 '	DPView.TextEngine = TextEngine
 '	DPView.Text = ""
-	FilterTab.CornerRadiusBackground = FilterTab.Base.Height/2 'make the view rounded
-	FilterTab.CornerRadiusBackground = 10dip 'make the view rounded
+	#If B4I
+	Wait For B4XPage_Resize (Width As Int, Height As Int)
+	#End If
+	
+	Dim xpnl_seg_Tab_background As B4XView = xui.CreatePanel("")
+	xpnl_seg_Tab_background.SetLayoutAnimated(0,0,0,(Activity.Width)*2, 40dip)
+	xpnl_seg_Tab_background.LoadLayout("FAQsTab")
+	clvTabs.Add(xpnl_seg_Tab_background,"")
+	
+'	FilterTab.Base.SetColorAndBorder(FilterTab.Base.Color,0,0,FilterTab.Base.Height/2) 'make the view rounded
 
-	FilterTab.AddTab("GENERAL", Null)
-	FilterTab.AddTab("BILLING", Null)
-	FilterTab.AddTab("TECHNICAL",Null)
-'	FilterTab.AddTab("PRODUCT & INSTALLATION REQUEST",Null)
+	FilterTab.CornerRadiusBackground = FilterTab.Base.Height/2 'make the view rounded
+'	FilterTab.CornerRadiusBackground = 10dip 'make the view rounded
+
+	FilterTab.AddTab("ALL", Null)
+	FilterTab.AddTab("General", Null)
+	FilterTab.AddTab("Billing Concern", Null)
+	FilterTab.AddTab("Technical Concern",Null)
+	FilterTab.AddTab("Product & Installation",Null)
 
 End Sub
 

@@ -323,6 +323,7 @@ C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage$B4AMenuItemsClickListener.de
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage$HandleKeyDelayed.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage$ResumeMessage.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage$WaitForLayout.dex
+C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage$_iteminfo.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\faqspage.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\globalvariables.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\historypage$1.dex
@@ -387,6 +388,7 @@ C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\xuiviewsutils.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_dataprivacy.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_faqs.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_faqscontent.dex
+C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_faqstab.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_history.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_landingcontents.dex
 C:\BWSI-Cares\Objects\dexed\com\bwsi\cares\designerscripts\LS_landingpage.dex

@@ -340,6 +340,9 @@ public anywheresoftware.b4a.objects.LabelWrapper _back = null;
 public com.bwsi.cares.bctextengine _textengine = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public com.bwsi.cares.assegmentedtab _filtertab = null;
+public b4a.example3.customlistview _clvtabs = null;
+public b4a.example3.customlistview _clvfaqs = null;
+public com.bwsi.cares.clvexpandable _expandable = null;
 public b4a.example.dateutils _dateutils = null;
 public com.bwsi.cares.main _main = null;
 public com.bwsi.cares.globalvariables _globalvariables = null;
@@ -351,6 +354,21 @@ public com.bwsi.cares.starter _starter = null;
 public com.bwsi.cares.httputils2service _httputils2service = null;
 public com.bwsi.cares.b4xcollections _b4xcollections = null;
 public com.bwsi.cares.xuiviewsutils _xuiviewsutils = null;
+public static class _iteminfo{
+public boolean IsInitialized;
+public int ID;
+public String parentID;
+public anywheresoftware.b4a.objects.collections.List ascendantIDs;
+public void Initialize() {
+IsInitialized = true;
+ID = 0;
+parentID = "";
+ascendantIDs = new anywheresoftware.b4a.objects.collections.List();
+}
+@Override
+		public String toString() {
+			return BA.TypeToString(this, false);
+		}}
 
 public static void initializeProcessGlobals() {
              try {
@@ -360,46 +378,58 @@ public static void initializeProcessGlobals() {
             }
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 16;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 17;BA.debugLine="SetStatusBarAndNavigationColor(GlobalVariables.Pr";
+anywheresoftware.b4a.objects.B4XViewWrapper _xpnl_seg_tab_background = null;
+ //BA.debugLineNum = 20;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 21;BA.debugLine="SetStatusBarAndNavigationColor(GlobalVariables.Pr";
 _setstatusbarandnavigationcolor((int) (mostCurrent._globalvariables._pricolor1 /*double*/ ));
- //BA.debugLineNum = 18;BA.debugLine="Activity.LoadLayout(\"FAQs\")";
+ //BA.debugLineNum = 22;BA.debugLine="Activity.LoadLayout(\"FAQs\")";
 mostCurrent._activity.LoadLayout("FAQs",mostCurrent.activityBA);
- //BA.debugLineNum = 19;BA.debugLine="TextEngine.Initialize(Activity)";
+ //BA.debugLineNum = 23;BA.debugLine="TextEngine.Initialize(Activity)";
 mostCurrent._textengine._initialize /*String*/ (mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(mostCurrent._activity.getObject())));
- //BA.debugLineNum = 22;BA.debugLine="FilterTab.CornerRadiusBackground = FilterTab.Base";
+ //BA.debugLineNum = 30;BA.debugLine="Dim xpnl_seg_Tab_background As B4XView = xui.Crea";
+_xpnl_seg_tab_background = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_xpnl_seg_tab_background = mostCurrent._xui.CreatePanel(processBA,"");
+ //BA.debugLineNum = 31;BA.debugLine="xpnl_seg_Tab_background.SetLayoutAnimated(0,0,0,(";
+_xpnl_seg_tab_background.SetLayoutAnimated((int) (0),(int) (0),(int) (0),(int) ((mostCurrent._activity.getWidth())*2),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (40)));
+ //BA.debugLineNum = 32;BA.debugLine="xpnl_seg_Tab_background.LoadLayout(\"FAQsTab\")";
+_xpnl_seg_tab_background.LoadLayout("FAQsTab",mostCurrent.activityBA);
+ //BA.debugLineNum = 33;BA.debugLine="clvTabs.Add(xpnl_seg_Tab_background,\"\")";
+mostCurrent._clvtabs._add(_xpnl_seg_tab_background,(Object)(""));
+ //BA.debugLineNum = 37;BA.debugLine="FilterTab.CornerRadiusBackground = FilterTab.Base";
 mostCurrent._filtertab._setcornerradiusbackground((float) (mostCurrent._filtertab._getbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ().getHeight()/(double)2));
- //BA.debugLineNum = 23;BA.debugLine="FilterTab.CornerRadiusBackground = 10dip 'make th";
-mostCurrent._filtertab._setcornerradiusbackground((float) (anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (10))));
- //BA.debugLineNum = 25;BA.debugLine="FilterTab.AddTab(\"GENERAL\", Null)";
-mostCurrent._filtertab._addtab /*String*/ ("GENERAL",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
- //BA.debugLineNum = 26;BA.debugLine="FilterTab.AddTab(\"BILLING\", Null)";
-mostCurrent._filtertab._addtab /*String*/ ("BILLING",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
- //BA.debugLineNum = 27;BA.debugLine="FilterTab.AddTab(\"TECHNICAL\",Null)";
-mostCurrent._filtertab._addtab /*String*/ ("TECHNICAL",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
+ //BA.debugLineNum = 40;BA.debugLine="FilterTab.AddTab(\"ALL\", Null)";
+mostCurrent._filtertab._addtab /*String*/ ("ALL",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 41;BA.debugLine="FilterTab.AddTab(\"General\", Null)";
+mostCurrent._filtertab._addtab /*String*/ ("General",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 42;BA.debugLine="FilterTab.AddTab(\"Billing Concern\", Null)";
+mostCurrent._filtertab._addtab /*String*/ ("Billing Concern",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 43;BA.debugLine="FilterTab.AddTab(\"Technical Concern\",Null)";
+mostCurrent._filtertab._addtab /*String*/ ("Technical Concern",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 44;BA.debugLine="FilterTab.AddTab(\"Product & Installation\",Null)";
+mostCurrent._filtertab._addtab /*String*/ ("Product & Installation",(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)));
+ //BA.debugLineNum = 46;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 35;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 37;BA.debugLine="End Sub";
+ //BA.debugLineNum = 51;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 53;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 32;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 33;BA.debugLine="End Sub";
+ //BA.debugLineNum = 48;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 49;BA.debugLine="End Sub";
 return "";
 }
 public static String  _back_click() throws Exception{
- //BA.debugLineNum = 39;BA.debugLine="Private Sub Back_Click";
- //BA.debugLineNum = 40;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 55;BA.debugLine="Private Sub Back_Click";
+ //BA.debugLineNum = 56;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 41;BA.debugLine="End Sub";
+ //BA.debugLineNum = 57;BA.debugLine="End Sub";
 return "";
 }
 public static String  _filtertab_tabchanged(int _index) throws Exception{
- //BA.debugLineNum = 59;BA.debugLine="Private Sub FilterTab_TabChanged(index As Int)";
- //BA.debugLineNum = 61;BA.debugLine="End Sub";
+ //BA.debugLineNum = 75;BA.debugLine="Private Sub FilterTab_TabChanged(index As Int)";
+ //BA.debugLineNum = 77;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
@@ -412,7 +442,15 @@ mostCurrent._textengine = new com.bwsi.cares.bctextengine();
 mostCurrent._xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
  //BA.debugLineNum = 13;BA.debugLine="Private FilterTab As ASSegmentedTab";
 mostCurrent._filtertab = new com.bwsi.cares.assegmentedtab();
- //BA.debugLineNum = 14;BA.debugLine="End Sub";
+ //BA.debugLineNum = 14;BA.debugLine="Private clvTabs As CustomListView";
+mostCurrent._clvtabs = new b4a.example3.customlistview();
+ //BA.debugLineNum = 15;BA.debugLine="Private clvFAQs As CustomListView";
+mostCurrent._clvfaqs = new b4a.example3.customlistview();
+ //BA.debugLineNum = 16;BA.debugLine="Type itemInfo(ID As Int, parentID As String, asce";
+;
+ //BA.debugLineNum = 17;BA.debugLine="Private expandable As CLVExpandable";
+mostCurrent._expandable = new com.bwsi.cares.clvexpandable();
+ //BA.debugLineNum = 18;BA.debugLine="End Sub";
 return "";
 }
 public static String  _process_globals() throws Exception{
@@ -424,33 +462,33 @@ public static String  _setstatusbarandnavigationcolor(int _clr) throws Exception
 anywheresoftware.b4j.object.JavaObject _jo = null;
 anywheresoftware.b4j.object.JavaObject _window = null;
 anywheresoftware.b4j.object.JavaObject _jo2 = null;
- //BA.debugLineNum = 43;BA.debugLine="Sub SetStatusBarAndNavigationColor(clr As Int)";
- //BA.debugLineNum = 44;BA.debugLine="Try";
-try { //BA.debugLineNum = 45;BA.debugLine="Dim jo As JavaObject";
+ //BA.debugLineNum = 59;BA.debugLine="Sub SetStatusBarAndNavigationColor(clr As Int)";
+ //BA.debugLineNum = 60;BA.debugLine="Try";
+try { //BA.debugLineNum = 61;BA.debugLine="Dim jo As JavaObject";
 _jo = new anywheresoftware.b4j.object.JavaObject();
- //BA.debugLineNum = 46;BA.debugLine="jo.InitializeContext";
+ //BA.debugLineNum = 62;BA.debugLine="jo.InitializeContext";
 _jo.InitializeContext(processBA);
- //BA.debugLineNum = 47;BA.debugLine="Dim window As JavaObject = jo.RunMethodJO(\"getWi";
+ //BA.debugLineNum = 63;BA.debugLine="Dim window As JavaObject = jo.RunMethodJO(\"getWi";
 _window = new anywheresoftware.b4j.object.JavaObject();
 _window = _jo.RunMethodJO("getWindow",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
- //BA.debugLineNum = 48;BA.debugLine="window.RunMethod(\"addFlags\", Array (0x80000000))";
+ //BA.debugLineNum = 64;BA.debugLine="window.RunMethod(\"addFlags\", Array (0x80000000))";
 _window.RunMethod("addFlags",new Object[]{(Object)(((int)0x80000000))});
- //BA.debugLineNum = 49;BA.debugLine="window.RunMethod(\"clearFlags\", Array (0x04000000";
+ //BA.debugLineNum = 65;BA.debugLine="window.RunMethod(\"clearFlags\", Array (0x04000000";
 _window.RunMethod("clearFlags",new Object[]{(Object)(((int)0x04000000))});
- //BA.debugLineNum = 50;BA.debugLine="window.RunMethod(\"setStatusBarColor\", Array(clr)";
+ //BA.debugLineNum = 66;BA.debugLine="window.RunMethod(\"setStatusBarColor\", Array(clr)";
 _window.RunMethod("setStatusBarColor",new Object[]{(Object)(_clr)});
- //BA.debugLineNum = 51;BA.debugLine="Dim jo2 As JavaObject";
+ //BA.debugLineNum = 67;BA.debugLine="Dim jo2 As JavaObject";
 _jo2 = new anywheresoftware.b4j.object.JavaObject();
- //BA.debugLineNum = 52;BA.debugLine="jo2.InitializeContext";
+ //BA.debugLineNum = 68;BA.debugLine="jo2.InitializeContext";
 _jo2.InitializeContext(processBA);
- //BA.debugLineNum = 53;BA.debugLine="jo2.RunMethodJO(\"getWindow\", Null).RunMethod(\"se";
+ //BA.debugLineNum = 69;BA.debugLine="jo2.RunMethodJO(\"getWindow\", Null).RunMethod(\"se";
 _jo2.RunMethodJO("getWindow",(Object[])(anywheresoftware.b4a.keywords.Common.Null)).RunMethod("setNavigationBarColor",new Object[]{(Object)(_clr)});
  } 
        catch (Exception e12) {
-			processBA.setLastException(e12); //BA.debugLineNum = 55;BA.debugLine="ToastMessageShow(\"Some error with your android v";
+			processBA.setLastException(e12); //BA.debugLineNum = 71;BA.debugLine="ToastMessageShow(\"Some error with your android v";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Some error with your android version ( <5 )"),anywheresoftware.b4a.keywords.Common.True);
  };
- //BA.debugLineNum = 57;BA.debugLine="End Sub";
+ //BA.debugLineNum = 73;BA.debugLine="End Sub";
 return "";
 }
 }

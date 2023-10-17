@@ -12,44 +12,45 @@ File18=explore.png
 File19=FAQs.bal
 File2=2.jpg
 File20=FAQsContent.bal
-File21=header.jpg
-File22=Helvetica.ttf
-File23=History.bal
-File24=home.png
-File25=house-flood.png
-File26=landingcontents.bal
-File27=landingpage.bal
-File28=light.ttf
-File29=Login.bal
+File21=FAQsTab.bal
+File22=header.jpg
+File23=Helvetica.ttf
+File24=History.bal
+File25=home.png
+File26=house-flood.png
+File27=landingcontents.bal
+File28=landingpage.bal
+File29=light.ttf
 File3=3.jpg
-File30=NewDetails.bal
-File31=News1.jpg
-File32=News2.jpg
-File33=News4.png
-File34=News6.jpg
-File35=NewsCards.bal
-File36=person0.jpg
-File37=person1.jpg
-File38=person2.jpg
-File39=person3.jpg
+File30=Login.bal
+File31=NewDetails.bal
+File32=News1.jpg
+File33=News2.jpg
+File34=News4.png
+File35=News6.jpg
+File36=NewsCards.bal
+File37=person0.jpg
+File38=person1.jpg
+File39=person2.jpg
 File4=4.jpg
-File40=services.jpg
-File41=services.png
-File42=services-desc.jpg
-File43=ServicesDetails.bal
-File44=ServicesItems.bal
-File45=Splash.bal
-File46=splash.jpg
-File47=splash.png
-File48=table-like.png
-File49=ultralight.ttf
+File40=person3.jpg
+File41=services.jpg
+File42=services.png
+File43=services-desc.jpg
+File44=ServicesDetails.bal
+File45=ServicesItems.bal
+File46=Splash.bal
+File47=splash.jpg
+File48=splash.png
+File49=table-like.png
 File5=65.jpg
-File50=user.png
-File51=water-drop.png
-File52=web1.jpg
-File53=web2.jpg
-File54=web3.jpg
-File55=web4.jpg
+File50=ultralight.ttf
+File51=user.png
+File52=water-drop.png
+File53=web1.jpg
+File54=web2.jpg
+File55=web3.jpg
+File56=web4.jpg
 File6=65years.jpg
 File7=arrow.png
 File8=arrow2.png
@@ -67,63 +68,64 @@ FileGroup18=Default Group
 FileGroup19=Default Group\Activity Layouts
 FileGroup2=Default Group\Images
 FileGroup20=Default Group
-FileGroup21=Default Group\Images
-FileGroup22=Default Group\Fonts
-FileGroup23=Default Group\Activity Layouts
-FileGroup24=Default Group\Icons
+FileGroup21=Default Group
+FileGroup22=Default Group\Images
+FileGroup23=Default Group\Fonts
+FileGroup24=Default Group\Activity Layouts
 FileGroup25=Default Group\Icons
-FileGroup26=Default Group\Activity Layouts
+FileGroup26=Default Group\Icons
 FileGroup27=Default Group\Activity Layouts
-FileGroup28=Default Group\Fonts
-FileGroup29=Default Group\Activity Layouts
+FileGroup28=Default Group\Activity Layouts
+FileGroup29=Default Group\Fonts
 FileGroup3=Default Group\Images
 FileGroup30=Default Group\Activity Layouts
-FileGroup31=Default Group\Images
+FileGroup31=Default Group\Activity Layouts
 FileGroup32=Default Group\Images
 FileGroup33=Default Group\Images
 FileGroup34=Default Group\Images
-FileGroup35=Default Group\Activity Layouts
-FileGroup36=Default Group\Dummy Persons
+FileGroup35=Default Group\Images
+FileGroup36=Default Group\Activity Layouts
 FileGroup37=Default Group\Dummy Persons
 FileGroup38=Default Group\Dummy Persons
 FileGroup39=Default Group\Dummy Persons
 FileGroup4=Default Group\Images
-FileGroup40=Default Group\Images
-FileGroup41=Default Group\Icons
-FileGroup42=Default Group\Images
-FileGroup43=Default Group\Activity Layouts
+FileGroup40=Default Group\Dummy Persons
+FileGroup41=Default Group\Images
+FileGroup42=Default Group\Icons
+FileGroup43=Default Group\Images
 FileGroup44=Default Group\Activity Layouts
 FileGroup45=Default Group\Activity Layouts
-FileGroup46=Default Group\Images
+FileGroup46=Default Group\Activity Layouts
 FileGroup47=Default Group\Images
-FileGroup48=Default Group
-FileGroup49=Default Group\Fonts
+FileGroup48=Default Group\Images
+FileGroup49=Default Group
 FileGroup5=Default Group\Images
-FileGroup50=Default Group\Icons
-FileGroup51=Default Group
-FileGroup52=Default Group\Images
+FileGroup50=Default Group\Fonts
+FileGroup51=Default Group\Icons
+FileGroup52=Default Group
 FileGroup53=Default Group\Images
 FileGroup54=Default Group\Images
 FileGroup55=Default Group\Images
+FileGroup56=Default Group\Images
 FileGroup6=Default Group\Images
 FileGroup7=Default Group\Images
 FileGroup8=Default Group\Images
 FileGroup9=Default Group\Fonts
 Group=Default Group
 Library1=appcompat
-Library10=xcustomlistview
-Library11=xmllayoutbuilder
-Library12=xui
-Library13=xui views
-Library14=assegmentedtab
-Library2=bctextengine
-Library3=core
-Library4=floatingactionbutton
-Library5=phone
-Library6=reflection
-Library7=runtimepermissions
-Library8=splashfade
-Library9=sql
+Library10=sql
+Library11=xcustomlistview
+Library12=xmllayoutbuilder
+Library13=xui
+Library14=xui views
+Library2=assegmentedtab
+Library3=bctextengine
+Library4=core
+Library5=floatingactionbutton
+Library6=phone
+Library7=reflection
+Library8=runtimepermissions
+Library9=splashfade
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="31"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.
 Module1=ASBottomMenu
 Module10=NewsPage
@@ -136,7 +138,7 @@ Module6=FAQsPage
 Module7=GlobalVariables
 Module8=HistoryPage
 Module9=ImageSlider
-NumberOfFiles=55
+NumberOfFiles=56
 NumberOfLibraries=14
 NumberOfModules=11
 Version=12.2
@@ -226,6 +228,16 @@ Sub Globals
 	'Login
 	Private cdTxtBox As ColorDrawable
 	Private MainMenu As ASBottomMenu
+	Private btnLogin As Panel
+	Private btnReg As Panel
+	Private btnRegister As Label
+	Private pnlRegister As Panel
+	Private REGbtnRegister As Label
+	Private txtRegConfirmPassword As EditText
+	Private txtRegEmail As EditText
+	Private txtRegFullName As EditText
+	Private txtRegPassword As EditText
+	Private REGlblLogin As Label
 End Sub
 
 #Region Activity Events
@@ -293,8 +305,11 @@ Sub Activity_Create(FirstTime As Boolean)
 	MainMenu.SetText1("Explore")
 	MainMenu.SetText2("Services")
 	MainMenu.SetText5("Branches")
-	MainMenu.SetText3("Call Us")
+	MainMenu.SetText3("Contact Us")
 	MainMenu.SetText4("Account")
+	
+	cdTxtBox.Initialize2(Colors.Transparent, 0,0, Colors.Transparent)
+
 End Sub
 
 Sub Activity_Resume
@@ -502,11 +517,24 @@ Private Sub MainMenu_Page4Click
 	pnlAccount.Visible = True
 	pnlAccount.SetLayoutAnimated(0,0,0,100%x, 90%y)
 	pnlAccount.LoadLayout("Login")
-	cdTxtBox.Initialize2(Colors.Transparent, 0,0, Colors.Transparent)
+	pnlLogin.Visible = True
+	btnLogin.Visible = True
+	pnlRegister.Visible = False
+	btnReg.Visible = False
+	fabApply.Visible = False
+	InitTxtBoxes
+End Sub
+
+#Region Textboxes
+Private Sub InitTxtBoxes
 	txtLoginEMail.Background = cdTxtBox
 	txtLoginPassword.Background = cdTxtBox
-	fabApply.Visible = False	
+	txtRegEmail.Background = cdTxtBox
+	txtRegFullName.Background = cdTxtBox
+	txtRegPassword.Background = cdTxtBox
+	txtRegConfirmPassword.Background = cdTxtBox	
 End Sub
+#End Region
 
 Private Sub MainMenu_Page5Click
 	
@@ -883,4 +911,27 @@ End Sub
 
 Private Sub lblViewAll_Click
 	StartActivity(FAQsPage)
+End Sub
+
+Private Sub REGlblLogin_Click
+	pnlLogin.Visible = True
+	pnlRegister.Visible = False
+	btnLogin.Visible = True
+	btnReg.Visible = False
+End Sub
+
+Private Sub btnRegister_Click
+	pnlLogin.Visible = False
+	pnlRegister.Visible = True
+	btnReg.Visible = True
+	btnLogin.Visible = False	
+End Sub
+
+Private Sub btnLogin_Click
+	
+End Sub
+
+
+Private Sub btnReg_Click
+	
 End Sub
